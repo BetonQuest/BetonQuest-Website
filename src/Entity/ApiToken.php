@@ -10,6 +10,10 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class ApiToken
 {
+    public const ID = 'id';
+    public const TOKEN = 'token';
+    public const ROLE = 'role';
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
