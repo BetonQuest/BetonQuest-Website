@@ -21,7 +21,7 @@ class PseudoUser implements UserInterface
             throw new UnsupportedUserException("Only supporting roles as username!");
         }
         $this->username = $username;
-        $this->roles = array_unique(['ROLE_USER', $username]);
+        $this->roles = [$username];
     }
 
     /**
